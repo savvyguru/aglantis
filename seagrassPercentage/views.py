@@ -29,7 +29,7 @@ def Form(request):
 			# call your python code for image processing
 			#print('processing', uploaded_file_url)
 			print('processing', path)
-			process = Popen(["python","/Users/richard/aglantisWebsite/seagrassPercentage/imgproc/seagrassCounter.py","-i",path])
+			process = Popen(["python3","/Users/richard/aglantisWebsite/seagrassPercentage/imgproc/seagrassCounter.py","-i",path])
 			#command = 'python /Users/richard/aglantisWebsite/seagrassPercentage/imgproc/seagrassCounter.py -i' + path
 			#os.system(command)
 			return HttpResponse("File(s) uploaded!")
